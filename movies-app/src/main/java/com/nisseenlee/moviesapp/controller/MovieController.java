@@ -1,6 +1,7 @@
 package com.nisseenlee.moviesapp.controller;
 
 import com.nisseenlee.moviesapp.model.Movie;
+import com.nisseenlee.moviesapp.model.Review;
 import com.nisseenlee.moviesapp.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
