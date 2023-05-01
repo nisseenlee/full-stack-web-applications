@@ -1,2 +1,2 @@
-# java-web-applications
-Repository for Java Web Applications
+# full-stack-web-applications
+Repository for Full Stack Web Applications
