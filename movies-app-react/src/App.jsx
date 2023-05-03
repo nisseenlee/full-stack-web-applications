@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import api from './api/axiosConfig'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,12 +9,19 @@ function App() {
 
   const getMovies = async () => {
     try {
-      const response = await api.get("api/v1/movies");
-      setMovies(response.data);
+      const response = await fetch("http://localhost:8080/api/v1/movies")
+        .then(res => res.json())
+        .then(data => console.log(data));
+      
+      setMovies(response);
     } catch(err) {
       console.log(err);
     }
   }
+
+  useEffect(() => {
+    getMovies();
+  }, [])
 
   return (
     <>
