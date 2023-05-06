@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Layout } from './components/Layout'
+import { Routes, Route } from 'react-router-dom'
+import { Home } from './components/home/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState(0);
 
   const getMovies = async () => {
     try {
       const response = await fetch("http://localhost:8080/api/v1/movies")
-        .then(res => res.json())
-        .then(data => console.log(data));
+        .then(res => res.json());
       
       setMovies(response);
+      console.log(response)
     } catch(err) {
       console.log(err);
     }
@@ -25,26 +25,13 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='App'>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home movies={movies} />}></Route>
+          </Route>
+        </Routes>
       </div>
-      <h1>REACT</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
