@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import api from './api/axiosConfig'
 import { Layout } from './components/Layout'
 import { Routes, Route } from 'react-router-dom'
 import { Home } from './components/home/Home'
@@ -9,11 +10,12 @@ function App() {
 
   const getMovies = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/v1/movies")
-        .then(res => res.json());
+      // const response = await fetch("http://localhost:8080/api/v1/movies")
+      //   .then(res => res.json());
+      const response = await api.get('/api/v1/movies');
       
-      setMovies(response);
-      console.log(response)
+      setMovies(response.data);
+      console.log(response.data)
     } catch(err) {
       console.log(err);
     }
