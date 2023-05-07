@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@emotion/react", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:11.10.8"],\
             ["@emotion/styled", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:11.10.8"],\
+            ["@fortawesome/fontawesome-svg-core", "npm:6.4.0"],\
             ["@fortawesome/free-solid-svg-icons", "npm:6.4.0"],\
             ["@fortawesome/react-fontawesome", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:0.2.0"],\
             ["@mui/material", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:5.12.2"],\
@@ -870,6 +871,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@fortawesome/fontawesome-svg-core", [\
+        ["npm:6.4.0", {\
+          "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-svg-core-npm-6.4.0-bc7699426e/node_modules/@fortawesome/fontawesome-svg-core/",\
+          "packageDependencies": [\
+            ["@fortawesome/fontawesome-svg-core", "npm:6.4.0"],\
+            ["@fortawesome/fontawesome-common-types", "npm:6.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@fortawesome/free-solid-svg-icons", [\
         ["npm:6.4.0", {\
           "packageLocation": "./.yarn/unplugged/@fortawesome-free-solid-svg-icons-npm-6.4.0-be633fc4ad/node_modules/@fortawesome/free-solid-svg-icons/",\
@@ -892,7 +903,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@fortawesome-react-fontawesome-virtual-3c456adecc/0/cache/@fortawesome-react-fontawesome-npm-0.2.0-a36215138f-f652a0c217.zip/node_modules/@fortawesome/react-fontawesome/",\
           "packageDependencies": [\
             ["@fortawesome/react-fontawesome", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:0.2.0"],\
-            ["@fortawesome/fontawesome-svg-core", null],\
+            ["@fortawesome/fontawesome-svg-core", "npm:6.4.0"],\
             ["@types/fortawesome__fontawesome-svg-core", null],\
             ["@types/react", "npm:18.2.0"],\
             ["prop-types", "npm:15.8.1"],\
@@ -3751,6 +3762,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["movies-app-react", "workspace:."],\
             ["@emotion/react", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:11.10.8"],\
             ["@emotion/styled", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:11.10.8"],\
+            ["@fortawesome/fontawesome-svg-core", "npm:6.4.0"],\
             ["@fortawesome/free-solid-svg-icons", "npm:6.4.0"],\
             ["@fortawesome/react-fontawesome", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:0.2.0"],\
             ["@mui/material", "virtual:b712f4d128733d4a291cdc8df49c407ca575c2ff00d9e7e391d24e418528a9f2202af839f8609469540042d77126fdfc02029b5807e325729867002283a96909#npm:5.12.2"],\
